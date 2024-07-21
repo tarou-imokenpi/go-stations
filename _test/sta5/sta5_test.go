@@ -37,6 +37,7 @@ func TestStation5(t *testing.T) {
 
 	r := router.NewRouter(todoDB)
 	srv := httptest.NewServer(r)
+	println(srv.URL)
 	defer srv.Close()
 	req, err := http.NewRequest(http.MethodGet, srv.URL+"/healthz", nil)
 	if err != nil {

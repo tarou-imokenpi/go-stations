@@ -9,6 +9,8 @@
     "@techtrain/cli-railway": "0.1.3"
   },
   "devDependencies": {
+    "@playwright/test": "^1.45.1",
+    "@types/node": "^20.14.10",
     "simple-git-hooks": "^2.5.1"
   },
   "scripts": {
